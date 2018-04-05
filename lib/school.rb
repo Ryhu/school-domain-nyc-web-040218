@@ -4,4 +4,8 @@ class School
     @name = input
     @roster = {}
   end
+  
+  def add_student
+    @roster << 
+  end
 end

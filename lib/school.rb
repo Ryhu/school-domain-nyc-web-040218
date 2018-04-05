@@ -25,7 +25,7 @@ class School
     @roster.each do |key, val|
       if result.has_key?(val)
         result[val] << key
-        puts 
+        puts result[val].sort
         result[val] = result[val].sort
       else
         result[val] = [key]

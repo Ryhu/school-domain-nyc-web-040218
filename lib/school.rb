@@ -28,7 +28,7 @@ class School
         puts result[val].sort
         result[val] = result[val].sort
       else
-        result[val] = [key]
+        result[val] = key
       end
     end
     return result

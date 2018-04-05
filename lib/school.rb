@@ -21,16 +21,16 @@ class School
   end
   
   def sort()
-    result = {}
-    @roster.each do |val, key|
-      if result.has_key?(val)
-        result[val] << key
-        puts result[val].sort
-        result[val] = result[val].sort
-      else
-        result[val] = key
-      end
-    end
+    result = @roster
+    # @roster.each do |key, val|
+    #   if result.has_key?(val)
+    #     result[val] << key
+    #     puts result[val].sort
+    #     result[val] = result[val].sort
+    #   else
+    #     result[val] = key
+    #   end
+    # end
     return result
     
   end

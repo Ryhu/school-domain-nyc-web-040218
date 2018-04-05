@@ -1,4 +1,4 @@
-reqire pry
+reqire 'pry'
 
 class School
   attr_accessor :name, :roster

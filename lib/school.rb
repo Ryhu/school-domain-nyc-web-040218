@@ -31,6 +31,7 @@ class School
         result[val] = [key]
       end
     end
+    return result
     
   end
   

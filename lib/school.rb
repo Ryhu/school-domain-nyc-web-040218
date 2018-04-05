@@ -1,5 +1,6 @@
 class School
   attr_accessor :name, :roster
+  
   def initialize(input)
     @name = input
     @roster = {}
@@ -12,4 +13,9 @@ class School
       @roster[number] = [name]
     end
   end
+  
+  def grade(number)
+    @roster[number]
+  end
+  
 end

@@ -1,3 +1,5 @@
+reqire pry
+
 class School
   attr_accessor :name, :roster
   
@@ -24,6 +26,8 @@ class School
       if result.has_key?(val)
         result[val] << key
         result[val] = result[val].sort
+        binding.pry
+        puts"asf"
       else
         result[val] = [key]
       end

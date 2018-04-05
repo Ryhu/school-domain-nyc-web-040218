@@ -18,6 +18,16 @@ class School
     @roster[number]
   end
   
-  
+  def sort()
+    result = {}
+    @roster.each do |key, val|
+      if result.has_key?(val)
+        result[val] << key
+      else
+        result[val] = [key]
+      end
+    end
+    
+  end
   
 end

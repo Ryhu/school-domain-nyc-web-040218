@@ -26,7 +26,6 @@ class School
       if result.has_key?(val)
         result[val] << key
         result[val] = result[val].sort
-
       else
         result[val] = [key]
       end
